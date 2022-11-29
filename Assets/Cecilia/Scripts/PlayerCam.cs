@@ -8,6 +8,7 @@ public class PlayerCam : MonoBehaviour
     public float sensY;
 
     public Transform orientation;
+    public Transform player;
 
     float xRotation;
     float yRotation;
@@ -20,8 +21,8 @@ public class PlayerCam : MonoBehaviour
     private void Update()
     {
         //Getting mouse input
-        float mouseX = Input.GetAxisRaw("Mosue X") * Time.deltaTime * sensX;
-        float mouseY = Input.GetAxisRaw("Mosue Y") * Time.deltaTime * sensY;
+        float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
+        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
 
         yRotation += mouseX;
 
@@ -31,5 +32,6 @@ public class PlayerCam : MonoBehaviour
         //Rotating player and camera
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+        player.rotation = Quaternion.Euler(0, yRotation + 90f, 0);
     }
 }
