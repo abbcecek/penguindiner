@@ -6,6 +6,7 @@ public class FoodPickup : MonoBehaviour
 {
     [SerializeField] private Transform playerFoodPos;
     private Transform foodTransform;
+    private bool foodFollow = false;
 
     List<string> availableFoods = new List<string>()
     {
@@ -18,7 +19,7 @@ public class FoodPickup : MonoBehaviour
 
     private void Start()
     {
-        playerFoodPos = GetComponent<Transform>();
+        playerFoodPos = playerFoodPos.GetComponent<Transform>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -28,8 +29,16 @@ public class FoodPickup : MonoBehaviour
             if (other.gameObject.CompareTag(availableFoods[i]))
             {
                 foodTransform = other.GetComponent<Transform>();
-                foodTransform = (playerFoodPos.x, playerFoodPos.y, playerFoodPos.z);
+                foodFollow = true;
             }
+        }
+    }
+    private void Update()
+    {
+        if (foodFollow)
+        {
+            foodTransform.position = playerFoodPos.position;
+            foodTransform.rotation =  transform.rotation;
         }
     }
 }
