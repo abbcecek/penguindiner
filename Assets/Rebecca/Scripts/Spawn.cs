@@ -25,7 +25,7 @@ public class Spawn : MonoBehaviour
        
    }
 
-    // Update is called once per frame
+    // En funktion som spwanar mat på en plats
     public void SpawnObject(GameObject food, GameObject spawningPosition)
     {
         

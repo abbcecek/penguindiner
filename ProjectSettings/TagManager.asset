@@ -7,6 +7,7 @@ TagManager:
   - Pizza
   - Spawn pos
   - Coffe
+  - Food pos
   layers:
   - Default
   - TransparentFX
