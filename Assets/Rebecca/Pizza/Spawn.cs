@@ -17,7 +17,12 @@ public class Spawn : MonoBehaviour
         //InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
         spawningPositions = GameObject.FindGameObjectsWithTag("Spawn pos");
 
-        SpawnObject(foods[0], spawningPositions[0]);
+        for (int i = 0; i < 5; i++)
+        {
+            SpawnObject(foods[i], spawningPositions[i]);
+        }
+
+       
    }
 
     // Update is called once per frame
