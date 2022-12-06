@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4777060776833552}
   - component: {fileID: 33685284380149388}
   - component: {fileID: 23993857906457852}
+  - component: {fileID: 6772871949719981880}
   m_Layer: 0
   m_Name: Pizza
   m_TagString: Pizza
@@ -83,3 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+--- !u!64 &6772871949719981880
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728772748170624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 72d80c016a719fe46ab722fc0ecc62f0, type: 3}
+>>>>>>> Stashed changes
