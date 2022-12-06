@@ -8,6 +8,10 @@ TagManager:
   - Spawn pos
   - Coffe
   - Food pos
+  - Money
+  - Hamburger
+  - Hotdog
+  - Watermelon
   layers:
   - Default
   - TransparentFX
