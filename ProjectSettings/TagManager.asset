@@ -6,12 +6,10 @@ TagManager:
   tags:
   - Pizza
   - Spawn pos
-<<<<<<< Updated upstream
   - Coffe
   - Food pos
-=======
   - Table
->>>>>>> Stashed changes
+  - Guest Pos
   layers:
   - Default
   - TransparentFX
