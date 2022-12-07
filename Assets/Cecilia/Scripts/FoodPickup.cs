@@ -32,10 +32,6 @@ public class FoodPickup : MonoBehaviour
                 foodFollow = true;
             }
         }
-        if (other.gameObject.CompareTag("Table"))
-        {
-            foodFollow = false;
-        }
     }
     private void Update()
     {
@@ -43,11 +39,6 @@ public class FoodPickup : MonoBehaviour
         {
             foodTransform.position = playerFoodPos.position;
             foodTransform.rotation =  transform.rotation;
-        }
-
-        if (Input.GetButtonDown("Fire1"))
-        {
-            foodFollow = false;
         }
     }
 }
