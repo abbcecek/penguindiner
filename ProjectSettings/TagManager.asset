@@ -8,9 +8,18 @@ TagManager:
   - Spawn pos
   - Coffe
   - Food pos
+<<<<<<< Updated upstream
   - Money
   - Hamburger
   - Hotdog
+=======
+  - Table
+  - Guest Pos
+  - Waypoint
+  - Seat
+  - Hotdog
+  - Hamburger
+>>>>>>> Stashed changes
   - Watermelon
   layers:
   - Default

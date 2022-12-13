@@ -17,7 +17,7 @@ public class Spawn : MonoBehaviour
         //InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
         spawningPositions = GameObject.FindGameObjectsWithTag("Spawn pos");
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < foods.Length; i++)
         {
             SpawnObject(foods[i], spawningPositions[i]);
         }
