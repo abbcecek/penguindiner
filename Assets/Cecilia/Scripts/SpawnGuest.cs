@@ -4,6 +4,7 @@ using UnityEngine;
 public class SpawnGuest : MonoBehaviour
 {
     public GameObject[] guests;
+    private int guestAmount = 0;
     public bool stopSpawning = false;
     public float spawnTime;
     public float spawnDelay;
@@ -28,11 +29,12 @@ public class SpawnGuest : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && guestAmount < 1)
         {
             for (int i = 0; i < guests.Length; i++)
             {
                 SpawnObject(guests[i], spawningPositions[i]);
+                guestAmount++;
             }
         }
     }

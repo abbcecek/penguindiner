@@ -45,7 +45,7 @@ public class FoodPickup : MonoBehaviour
             foodTransform.rotation =  transform.rotation;
         }
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetMouseButtonDown(0))
         {
             foodFollow = false;
         }
