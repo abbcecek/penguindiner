@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoodPickup : MonoBehaviour
+public class FoodPickupOriginal : MonoBehaviour
 {
     [SerializeField] private Transform playerFoodPos;
-    private GameObject foodObject;
     private Transform foodTransform;
-    public bool foodFollow = false;
+    private bool foodFollow = false;
 
     List<string> availableFoods = new List<string>()
     {
@@ -29,34 +28,26 @@ public class FoodPickup : MonoBehaviour
         {
             if (other.gameObject.CompareTag(availableFoods[i]))
             {
-                foodObject = other.gameObject;
-                /*foodTransform = other.GetComponent<Transform>();*/
+                foodTransform = other.GetComponent<Transform>();
                 foodFollow = true;
-                foodObject.GetComponent<Collider>().isTrigger = false;
             }
+        }
+        if (other.gameObject.CompareTag("Table"))
+        {
+            foodFollow = false;
         }
     }
     private void Update()
     {
         if (foodFollow)
         {
-            foodObject.transform.position = playerFoodPos.position;
-            foodObject.transform.rotation =  transform.rotation;
-            
-        }
-        else
-        {
-            /*foodObject.GetComponent<Collider>().isTrigger = true;*/
+            foodTransform.position = playerFoodPos.position;
+            foodTransform.rotation =  transform.rotation;
         }
 
         if (Input.GetMouseButtonDown(0))
         {
             foodFollow = false;
-            try
-            {
-                foodObject.GetComponent<Collider>().isTrigger = true;
-            }
-            catch { }
         }
     }
 }

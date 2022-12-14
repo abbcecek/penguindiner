@@ -3777,7 +3777,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint 1
   m_TagString: Waypoint
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4165,7 +4165,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint 5
   m_TagString: Waypoint
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9991,7 +9991,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint 3
   m_TagString: Waypoint
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -11650,7 +11650,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint 2
   m_TagString: Waypoint
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -12465,7 +12465,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint 4
   m_TagString: Waypoint
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -18903,6 +18903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerFoodPos: {fileID: 2056289864}
+  foodFollow: 0
 --- !u!1 &1887684132 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2235791115066207536, guid: 8fd8a57a30bb14c5b955916c92840436,

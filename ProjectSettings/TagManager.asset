@@ -4,22 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Pizza
-  - Spawn pos
-  - Coffe
-  - Food pos
-<<<<<<< Updated upstream
-  - Money
-  - Hamburger
-  - Hotdog
-=======
-  - Table
-  - Guest Pos
   - Waypoint
+  - Spawn pos
+  - Guest Pos
   - Seat
+  - Pizza
+  - Table
   - Hotdog
   - Hamburger
->>>>>>> Stashed changes
+  - Coffe
   - Watermelon
   layers:
   - Default

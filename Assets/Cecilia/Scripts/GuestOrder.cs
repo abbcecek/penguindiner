@@ -7,6 +7,12 @@ using UnityEngine;
 
 public class GuestOrder : MonoBehaviour
 {
+    [SerializeField] private Transform foodPos;
+    private GameObject foodObject;
+    private GameObject Player;
+    private bool foodOrdered = false;
+    private string orderedFood;
+
     List<string> availableFoods = new List<string>()
     {
         "Pizza",
@@ -16,18 +22,30 @@ public class GuestOrder : MonoBehaviour
         "Watermelon"
     };
 
-    private string orderedFood;
+    private void Start()
+    {
+        foodPos = foodPos.GetComponent<Transform>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && !foodOrdered)
         {
             orderedFood = orderFood();
             Debug.Log("Food ordered!");
+            foodOrdered = true;
+            Player = other.gameObject;
         }
-        if (other.gameObject.CompareTag("Pizza"))
+
+        Debug.Log(other.gameObject.tag);
+
+        if (other.gameObject.CompareTag("Pizza") && foodOrdered)
         {
-            other.gameObject.transform.position = transform.position;
+            Debug.Log("Takes food");
+
+            foodObject = other.gameObject;
+            Player.GetComponent<FoodPickup>().foodFollow = false;
+            foodObject.transform.position = foodPos.position;
         }
     }
 
