@@ -10,7 +10,7 @@ public class GuestOrder : MonoBehaviour
     [SerializeField] private Transform foodPos;
     private GameObject foodObject;
     private GameObject Player;
-    private bool foodOrdered = false;
+    public bool foodOrdered = false;
     private string orderedFood;
 
     List<string> availableFoods = new List<string>()
@@ -37,7 +37,7 @@ public class GuestOrder : MonoBehaviour
             Player = other.gameObject;
         }
 
-        Debug.Log(other.gameObject.tag);
+        /*Debug.Log(other.gameObject.tag);*/
 
         if (other.gameObject.CompareTag("Pizza") && foodOrdered)
         {

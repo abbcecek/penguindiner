@@ -11,7 +11,7 @@ public class ScoreManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scoreText.text = score.TSring() + "Points";
+        /*scoreText.text = score.TSring() + "Points";*/
 
     }
 

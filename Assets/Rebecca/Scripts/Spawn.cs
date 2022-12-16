@@ -8,7 +8,7 @@ public class Spawn : MonoBehaviour
     public float spawnTime;
     public float spawnDelay;
     public GameObject[] spawningPositions;
-
+    /*[SerializeField] private GameObject guest;*/
 
 
     // Start is called before the first frame update
@@ -21,17 +21,14 @@ public class Spawn : MonoBehaviour
         {
             SpawnObject(foods[i], spawningPositions[i]);
         }
-
-       
    }
 
     // En funktion som spwanar mat på en plats
     public void SpawnObject(GameObject food, GameObject spawningPosition)
     {
-        
-        
-       
-           Instantiate(food, spawningPosition.transform.position, transform.rotation);
-            
+        /*if (guest.GetComponent<GuestOrder>().foodOrdered == true)
+        {*/
+            Instantiate(food, spawningPosition.transform.position, transform.rotation);
+        /*}*/
     }
 }

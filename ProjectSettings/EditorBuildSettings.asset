@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Erjon/Scenes/MainMenu.unity
     guid: bd5e30fb6dbc15d4fbfcab35b2cb69c8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Resturang.unity
     guid: b138bd60401514a40a3bc4e708ff4455
+  - enabled: 1
+    path: Assets/Cecilia/Scenes/4Guest spawn.unity
+    guid: 2587a75109c1bc54aae79dce73a91ca4
   m_configObjects: {}
