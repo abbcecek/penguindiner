@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 public class SeatSelector : MonoBehaviour
@@ -12,6 +13,7 @@ public class SeatSelector : MonoBehaviour
     private int currentWaypointIndex = 0;
     private GameObject guestSeat;
     private int seatIndex;
+    private NavMeshAgent agent;
     int seatAmount;
 
     [SerializeField] private float speed = 2f;
@@ -20,7 +22,9 @@ public class SeatSelector : MonoBehaviour
     {
         waypoints = GameObject.FindGameObjectsWithTag("Waypoint");
         seats = GameObject.FindGameObjectsWithTag("Seat");
+        agent = gameObject.GetComponent<NavMeshAgent>();
         selectSeat();
+        
     }
 
     private void Update()
@@ -38,10 +42,13 @@ public class SeatSelector : MonoBehaviour
 
     private void findSeat()
     {
-        if (Vector3.Distance(guestSeat.transform.position, transform.position) > .1f)
+        /*if (Vector3.Distance(guestSeat.transform.position, transform.position) > .1f)
         {
             transform.position = Vector3.MoveTowards(transform.position, guestSeat.transform.position, Time.deltaTime * speed);
-        }
+        }*/
+        /*Debug.Log(agent);
+        Debug.Log(guestSeat); */      
+        agent.destination = guestSeat.transform.position;
     }
 
     private void followWaypoint()

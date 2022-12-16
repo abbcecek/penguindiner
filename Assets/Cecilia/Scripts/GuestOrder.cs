@@ -31,7 +31,7 @@ public class GuestOrder : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && !foodOrdered)
         {
-            orderedFood = orderFood();
+            orderedFood = OrderFood();
             Debug.Log("Food ordered!");
             foodOrdered = true;
             Player = other.gameObject;
@@ -49,7 +49,7 @@ public class GuestOrder : MonoBehaviour
         }
     }
 
-    private string orderFood()
+    private string OrderFood()
     {
         /*int index = Random.Range(0, availableFoods.Count);
         string order = availableFoods[index];*/
@@ -57,5 +57,10 @@ public class GuestOrder : MonoBehaviour
         Debug.Log("Ordering food");
 
         return order;
+    }
+
+    private void LeaveTip()
+    {
+
     }
 }
