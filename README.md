@@ -25,4 +25,4 @@
 - Även fast vi hade en bra plannering och bra kommunikation blev inte projektet klart
 
 
-##Troligtvis jobbar vi inte vidare på projektet, även om det har varit kul.
+## Troligtvis jobbar vi inte vidare på projektet, även om det har varit kul.
