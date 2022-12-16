@@ -1,6 +1,6 @@
 # penguindiner
 
-Saker som behöver jobbas på:
+## Saker som behöver jobbas på:
 - Gästerna kan beställa annan mat
 - Gästerna äter och sen lämnar pengar efter sig
 - Alla säten går att sitta vid för gästerna
@@ -13,15 +13,16 @@ Saker som behöver jobbas på:
 - Finslipa spelarnavigationen, alltså att inte fastna i bord eller gå igenom de
 - Minikarta
 
-Vad har gått bra?
+## Vad har gått bra?
 - Att vi fick saker gjorda, vi var sällan alla där för många var ofta frånvarande
 - Nästan hela "basen" av spelet blev klart, det saknades inte för mycket för att spelet skulle vara spelbart känns det som
 - Vi har lärt oss jättemycket i processen
 - Kommunikationen och planeringen
 
-Vad har gått mindre bra?
+## Vad har gått mindre bra?
 - Sjukdom, bortfall av personer
 - Olika ambitionsnivå hos alla
 - Även fast vi hade en bra plannering och bra kommunikation blev inte projektet klart
 
-Jag tror inte vi jobbar vidare på projektet, även om det har varit kul
+
+##Troligtvis jobbar vi inte vidare på projektet, även om det har varit kul.
